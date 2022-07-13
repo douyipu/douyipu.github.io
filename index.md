@@ -5,7 +5,7 @@
 layout: home
 ---
 
-# Me
+## Me
 
 <img style="float: right; width: 30%" src="assets/img/Beethoven.jpg">
 
