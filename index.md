@@ -5,8 +5,6 @@
 layout: home
 ---
 
-## Me
-
 <img style="float: right; width: 30%" src="assets/img/Beethoven.jpg">
 
 Southeast University, China ( 2019,9 - )
