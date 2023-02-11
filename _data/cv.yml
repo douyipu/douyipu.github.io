@@ -1,32 +1,30 @@
-- title: General Information
+- title: 基本信息
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - name: 名字
+      value: 窦一蒲
+    - name: 出生日期
+      value: 2002年2月25日
+    - name: 语言
+      value: 中文，English
 
-- title: Education
+- title: 教育背景
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: 高中
+      institution: 石家庄二中南校区
+      year: 2016
+    - title: 大学
+      institution: 东南大学
+      year: 2019
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - 2019-2020 计算机科学与工程学院
+        - 2020-2023 网络空间安全学院
+    - title: 研究生
+      institution: 东南大学
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
+        - 网络空间安全学院
 
 - title: Experience
   type: time_table
