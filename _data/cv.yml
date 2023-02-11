@@ -40,12 +40,11 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: 网络安全学院学生创新资助计划
+      institution: 奇安信
+      year: 2022年10月 - 2023年6月
       description:
-        - Description 1.
-        - Description 2.
+        - 协议深度采集与信息泄露研究
 
     - title: Director
       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
