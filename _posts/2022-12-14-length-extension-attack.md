@@ -67,24 +67,24 @@ SHA-256哈希函数首先对输入的消息（message）进行一个预处理：
 在预处理之后，数据已经被填充为512比特的整数倍，然后按照每块512比特进行分块。 数据块依次处理，正常情况下的处理如下图。第一个数据块与初始向量作为输入， 通过压缩函数（compress function）生成输出，作为下一个压缩函数的输入之一， 以此类推，最后得到哈希值。 
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/SHA-256-normal.svg" class="img-fluid rounded z-depth-1" style="text-align:center;" %}
+    <div class="col-sm mt-3 mt-md-0" style="text-align:center;">
+        {% include figure.html path="assets/img/SHA-256-normal.svg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 当你想要添加恶意的信息时，恶意的处理如下图。攻击者通过SHA-256填充规则， 人为地在恶意信息前伪造填充部分。 
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/SHA-512-malicious.svg" class="img-fluid rounded z-depth-1" style="text-align:center;" %}
+    <div class="col-sm mt-3 mt-md-0" style="text-align:center;">
+        {% include figure.html path="assets/img/SHA-512-malicious.svg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 最后的效果如下。这样，即使不知道之前的信息也可以构建出一个与添加了恶意信息 的恶意消息对应的合法哈希值。
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/SHA-512-normal-to-malicious.svg" class="img-fluid rounded z-depth-1" style="text-align:center;" %}
+    <div class="col-sm mt-3 mt-md-0" style="text-align:center;">
+        {% include figure.html path="assets/img/SHA-512-normal-to-malicious.svg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -136,7 +136,6 @@ HMAC(K,m)=H((K'\oplus opad)||H((K'\oplus ipad)||m))
 - $$K$$ 为密钥（secret key）
 - $$m$$ 是要认证的消息
 - $$K'$$ 是从原始密钥K导出的另一个秘密密钥（如果K短于散列函数的输入块大小， 则向右填充（Padding）零；如果比该块大小更长，则对K进行散列）
-- || 代表串接
 - $$\oplus$$ 代表异或（XOR）
 - $$opad$$ 是外部填充（0x5c5c5c…5c5c，一段十六进制常量）
 - $$ipad$$ 是内部填充（0x363636…3636，一段十六进制常量）
