@@ -86,7 +86,7 @@ giscus_comments: true
 
 通过 `put` 函数来将新的项加入表格，使用是 `(put <op> <type> <item>)` 。 
 
-{% highlight bash %}
+{% highlight scheme %}
 (put 'eval 'quote eval-quote)
 (put 'eval 'set eval-assignment)
 (put 'eval 'define eval-definition)
@@ -98,7 +98,7 @@ giscus_comments: true
 
 每个加入表格的函数的定义如下。
 
-{% highlight bash %}
+{% highlight scheme %}
 (define (eval-quote exp env)
   (text-of-quotation exp))
 (define (eval-assignment exp env)
