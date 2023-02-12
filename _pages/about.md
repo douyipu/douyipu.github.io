@@ -2,7 +2,7 @@
 layout: about
 title: 关于我
 permalink: /
-subtitle: 失败的教训比成功的经验更重要 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle:  # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
