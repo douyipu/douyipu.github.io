@@ -67,41 +67,7 @@ giscus_comments: true
 | cond   | eval-cond       |
 
 
-修改后的 `eval` 函数如下。因为 `quote` `set` `define` `if` `lambda` `begin` `cond` 这些表达式都有固定的前缀， 所以可以通过查表的方式获得对应的处理函数。 其中 `get` 函数是通过 `(get <op> <type>)` 来获得表格中的项，如果没有 找到，返回 `false` 。<d-footnote>在SICP的3.3.3小节： Representing Tables 中，展示了如何实现 表格的创建和 `get` 与 `put` 函数。
-(define (make-table)
-  (let ((local-table (list '*table*)))
-    (define (lookup key-1 key-2)
-      (let ((subtable
-	     (assoc key-1 (cdr local-table))))
-	(if subtable
-	    (let ((record
-		   (assoc key-2 (cdr subtable))))
-	      (if record (cdr record) false))
-	    false)))
-    (define (insert! key-1 key-2 value)
-      (let ((subtable
-	     (assoc key-1 (cdr local-table))))
-	(if subtable
-	    (let ((record
-		   (assoc key-2 (cdr subtable))))
-	      (if record
-		  (set-cdr! record value)
-		  (set-cdr! subtable
-			    (cons (cons key-2 value)
-				  (cdr subtable)))))
-	    (set-cdr! local-table
-		      (cons (list key-1 (cons key-2 value))
-			    (cdr local-table)))))
-      'ok)
-    (define (dispatch m)
-      (cond ((eq? m 'lookup-proc) lookup)
-	    ((eq? m 'insert-proc!) insert!)
-	    (else (error "Unknown operation: TABLE" m))))
-    dispatch))
-(define operation-table (make-table))
-(define get (operation-table 'lookup-proc))
-(define put (operation-table 'insert-proc!))
-</d-footnote>
+修改后的 `eval` 函数如下。因为 `quote` `set` `define` `if` `lambda` `begin` `cond` 这些表达式都有固定的前缀， 所以可以通过查表的方式获得对应的处理函数。 其中 `get` 函数是通过 `(get <op> <type>)` 来获得表格中的项，如果没有 找到，返回 `false` 。<d-footnote>在SICP的3.3.3小节： Representing Tables 中，展示了如何实现 表格的创建和 get 与 put 函数。</d-footnote>
 
 {% highlight scheme %}
 (define (eval exp env)
