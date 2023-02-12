@@ -13,7 +13,11 @@ giscus_comments: true
     </div>
 </div>
 
+<br/>
+
 ## 1. 题目
+
+<br/>
 
 **Exercise 4.1:** Notice that we cannot tell whether the metacircular evaluator evaluates operands from left to right or from right to left. Its evaluation order is inherited from the underlying Lisp: If the arguments to `cons` in `list-of-values` are evaluated from left to right, then `list-of-values` will evaluate operands from left to right; and if the arguments to `cons` are evaluated from right to left, then `list-of-values` will evaluate operands from right to left.
 
@@ -27,11 +31,15 @@ giscus_comments: true
 
 Write a version of `list-of-values` that evaluates operands from left to right regardless of the order of evaluation in the underlying Lisp. Also write a version of `list-of-values` that evaluates operands from right to left.
 
+<br/>
+
 ## 2. 思路
+
+<br/>
 
 注：下面的代码包含了执行所需的全部代码，可以直接执行。
 
-为了实现 `list-of-values` 的执行顺序不依赖于 `cons` 的执行顺序。 我想到使用迭代的方式来实现执行顺序的控制。这样，当 `iter` 函数递归调用时，不论 `iter` 与 `cons` 函数的执行顺序是从左向右还是从右向左，都会按照表达式的次序依次求值， 并将结果添加在 `values` 这个列表中保存起来，最后在 `iter` 函数结束时返回 (`reverse values`) 。 （注：The MIT implementation of Scheme includes `eval` , as well as a symbol `user-initial-environment` that is bound to the initial environment in which the user's input expressions are evaluated.） 
+为了实现 `list-of-values` 的执行顺序不依赖于 `cons` 的执行顺序。 我想到使用迭代的方式来实现执行顺序的控制。这样，当 `iter` 函数递归调用时，不论 `iter` 与 `cons` 函数的执行顺序是从左向右还是从右向左，都会按照表达式的次序依次求值， 并将结果添加在 `values` 这个列表中保存起来，最后在 `iter` 函数结束时返回 `(reverse values)` 。 （注：The MIT implementation of Scheme includes `eval` , as well as a symbol `user-initial-environment` that is bound to the initial environment in which the user's input expressions are evaluated.） 
 
 {% highlight scheme %}
 (define (no-operands? exps) (null? exps))
@@ -46,7 +54,7 @@ Write a version of `list-of-values` that evaluates operands from left to right r
   (iter exps '()))
 {% endhighlight %}
 
-也可以使用`let`关键字来实现。
+也可以使用 `let` 关键字来实现。
 
 {% highlight scheme %}
 (define (list-of-values-left-to-right exps env) 
@@ -90,7 +98,7 @@ XY
   (iter exps '()))
 {% endhighlight %}
 
-也可以使用`let`关键字来实现。
+也可以使用 `let` 关键字来实现。
 
 {% highlight scheme %}
 (define (list-of-values-right-to-left exps env) 
