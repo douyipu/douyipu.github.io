@@ -4,7 +4,7 @@ title: 项目
 permalink: /projects/
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [工作, 兴趣]
 horizontal: false
 ---
 
