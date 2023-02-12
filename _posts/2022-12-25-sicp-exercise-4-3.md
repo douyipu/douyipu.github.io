@@ -56,7 +56,7 @@ giscus_comments: true
 
 所以为了实现本次题目 data-directed style 的 `eval` 函数，我要构造一个 表来查询需要的函数。表格如下，第一行代表操作（Operations），第一列代表类型（Types）。 
 
-|   Types/Operations     | eval            |
+|      | eval            |
 | :----: | :-------------: |
 | quote  | eval-quote      |
 | set    | eval-assignment |
@@ -65,6 +65,8 @@ giscus_comments: true
 | lambda | eval-lambda     |
 | begin  | eval-begin      |
 | cond   | eval-cond       |
+
+<br/>
 
 修改后的 `eval` 函数如下。因为 `quote` `set` `define` `if` `lambda` `begin` `cond` 这些表达式都有固定的前缀， 所以可以通过查表的方式获得对应的处理函数。 其中 `get` 函数是通过 `(get <op> <type>)` 来获得表格中的项，如果没有 找到，返回 `false` 。 
 
