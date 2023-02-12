@@ -2,7 +2,7 @@
 layout: post
 title: SICP习题4.1
 date: 2022-12-21 11:12:00-0400
-description: 使用迭代或了let关键字的方式，让list-of-values函数的执行顺序不依赖与内部函数cons的执行顺序。
+description: 使用迭代或了let关键字的方式，让list-of-values函数的执行顺序不依赖内部函数cons的执行顺序。
 tags: SICP
 giscus_comments: true
 ---
