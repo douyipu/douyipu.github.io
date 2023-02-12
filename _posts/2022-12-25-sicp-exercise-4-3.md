@@ -56,8 +56,8 @@ giscus_comments: true
 
 所以为了实现本次题目 data-directed style 的 `eval` 函数，我要构造一个 表来查询需要的函数。表格如下，第一行代表操作（Operations），第一列代表类型（Types）。 
 
-|        | eval            |
-| ---    | ---             |
+|   Types/Operations     | eval            |
+| :----: | :-------------: |
 | quote  | eval-quote      |
 | set    | eval-assignment |
 | define | eval-definition |
