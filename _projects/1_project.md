@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: 网络安全学院学生创新资助计划
+description: 
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: 工作
 ---
 
 Every project has a beautiful feature showcase page.
