@@ -4,6 +4,7 @@ title: 长度扩展攻击
 date: 2022-12-14 11:12:00-0400
 description: SHA-256哈希函数对长度扩展攻击很脆弱，可以使用开源工具HashPump进行攻击，应采用HMAC函数对消息进行签名。
 tags: 密码学 PentesterLab
+giscus_comments: true
 ---
 
 <br/>
