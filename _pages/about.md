@@ -6,8 +6,8 @@ subtitle: # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: douyipu.jpeg
-  image_circular: false # crops the image to make it circular
+  image: Beethoven.jpg
+  image_circular: true # crops the image to make it circular
   address: >
     <p>东南大学九龙湖校区</p>
     <p>中国，南京</p>
