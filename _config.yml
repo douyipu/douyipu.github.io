@@ -49,7 +49,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -304,7 +304,7 @@ imagemagick:
   widths:
     - 480
     - 800
-    - 1400
+    
   input_directories:
     - assets/img/
   input_formats:
