@@ -5,6 +5,7 @@ permalink: /
 subtitle:  # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
+  max-width: 30%
   align: right
   image: Beethoven.jpg
   image_circular: true # crops the image to make it circular
