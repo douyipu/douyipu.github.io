@@ -2,7 +2,6 @@
 layout: post
 title: Login Debian 11.6.0 As Root Account Automatically
 date: 2023-3-4 11:12:00-0400
-description: 
 tags: Linux
 giscus_comments: true
 ---
