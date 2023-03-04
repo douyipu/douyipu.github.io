@@ -16,7 +16,7 @@ giscus_comments: true
 
 Before:
 
-```
+{% highlight %}
 [daemon]
 # Uncomment the line below to force the login screen to use Xorg
 #WaylandEnable=false
@@ -34,11 +34,11 @@ AutomaticLoginEnable=False
 AutomaticLogin=douyipu
 
 [security]
+{% endhighlight %}
 
-```
 After:
 
-```
+{% highlight %}
 [daemon]
 # Uncomment the line below to force the login screen to use Xorg
 #WaylandEnable=false
@@ -57,25 +57,25 @@ AutomaticLogin=root
 
 [security]
 AllowRoot=true
-```
+{% endhighlight %}
 
 4. Open file `/etc/pam.d/gdm-password`, `/etc/pam.d/gdm-autologin` and
 `/etc/pam.d/gdm-fingerprint`.
 
 Before:
 
-```
+{% highlight %}
 #%PAM-1.0
 auth    requisite       pam_nologin.so
 auth	required	pam_succeed_if.so user != root quiet_success
-```
+{% endhighlight %}
 
 After:
 
-```
+{% highlight %}
 #%PAM-1.0
 auth    requisite       pam_nologin.so
 #auth	required	pam_succeed_if.so user != root quiet_success
-```
+{% endhighlight %}
 
 5. Reboot.
