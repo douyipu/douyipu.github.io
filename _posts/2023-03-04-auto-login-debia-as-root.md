@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Login Debian 11.6.0 As Root Account Automatically
-date: 2023-03-04 11:12:00-0400
+date: 2023-03-04 11:12:00
+description: A brief note.
 tags: Linux
 giscus_comments: true
 ---
@@ -59,8 +60,7 @@ AutomaticLogin=root
 AllowRoot=true
 {% endhighlight %}
 
-4. Open file `/etc/pam.d/gdm-password`, `/etc/pam.d/gdm-autologin` and
-`/etc/pam.d/gdm-fingerprint`.
+4. Open file `/etc/pam.d/gdm-password`, `/etc/pam.d/gdm-autologin` and `/etc/pam.d/gdm-fingerprint`.
 
 Before:
 
