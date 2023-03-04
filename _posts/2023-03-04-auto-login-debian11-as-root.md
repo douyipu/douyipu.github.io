@@ -17,7 +17,7 @@ giscus_comments: true
 
 Before:
 
-{% highlight %}
+{% highlight conf %}
 [daemon]
 # Uncomment the line below to force the login screen to use Xorg
 #WaylandEnable=false
@@ -39,7 +39,7 @@ AutomaticLogin=douyipu
 
 After:
 
-{% highlight %}
+{% highlight conf %}
 [daemon]
 # Uncomment the line below to force the login screen to use Xorg
 #WaylandEnable=false
@@ -64,7 +64,7 @@ AllowRoot=true
 
 Before:
 
-{% highlight %}
+{% highlight conf %}
 #%PAM-1.0
 auth    requisite       pam_nologin.so
 auth	required	pam_succeed_if.so user != root quiet_success
@@ -72,7 +72,7 @@ auth	required	pam_succeed_if.so user != root quiet_success
 
 After:
 
-{% highlight %}
+{% highlight conf %}
 #%PAM-1.0
 auth    requisite       pam_nologin.so
 #auth	required	pam_succeed_if.so user != root quiet_success
