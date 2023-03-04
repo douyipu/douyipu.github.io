@@ -15,7 +15,7 @@ giscus_comments: true
 
 - Stay in root terminal and type `emacs /etc/gdm3/daemon.conf`. This command opens the file `daemon.conf` in Emacs. 
 
-- Before:
+  - Before:
 
 {% highlight conf %}
 [daemon]
@@ -37,7 +37,7 @@ AutomaticLogin=douyipu
 [security]
 {% endhighlight %}
 
-- After:
+  - After:
 
 {% highlight conf %}
 [daemon]
@@ -62,7 +62,7 @@ AllowRoot=true
 
 - Open file `/etc/pam.d/gdm-password`, `/etc/pam.d/gdm-autologin` and `/etc/pam.d/gdm-fingerprint`.
 
-- Before:
+  - Before:
 
 {% highlight conf %}
 #%PAM-1.0
@@ -70,7 +70,7 @@ auth    requisite       pam_nologin.so
 auth	required	pam_succeed_if.so user != root quiet_success
 {% endhighlight %}
 
-- After:
+  - After:
 
 {% highlight conf %}
 #%PAM-1.0
