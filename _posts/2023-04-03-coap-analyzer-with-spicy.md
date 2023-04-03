@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CoAP Analyzer with Spicy
-date: 2022-04-03 11:12:00-0400
+date: 2023-04-03 11:12:00-0400
 description: How to build a CoAP analyzer with Spicy and integrate it with Zeek.
 tags: Zeek Spicy
 giscus_comments: true
