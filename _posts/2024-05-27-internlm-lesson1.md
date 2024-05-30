@@ -39,7 +39,7 @@ giscus_comments: true
 
 <br/>
 
-信息来源：[企查查](https://www.qcc.com/crun/gb763cde408bc79a86548e43bc1daa8b.html)，下载 CSV 格式的[数据](assets/database/shanghai-ai-hire.csv)。
+信息来源：[企查查](https://www.qcc.com/crun/gb763cde408bc79a86548e43bc1daa8b.html)，下载 CSV 格式的[数据]([assets/database/shanghai-ai-hire.csv](https://github.com/douyipu/douyipu.github.io/blob/master/assets/database/shanghai-ai-hire.csv))。
 
 职位类型：
 - 研究员/青年研究员（如内容生成、视觉多模态大模型、语言大模型等）
@@ -107,7 +107,7 @@ giscus_comments: true
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1752403076&bvid=BV1Vx421X72D&cid=1484131437&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
-下载 [PPT](assets/pdf/[1]书生·浦语大模型开源开放体系_compressed.pdf)
+下载 [PPT]([assets/pdf/[1]书生·浦语大模型开源开放体系_compressed.pdf](https://github.com/douyipu/douyipu.github.io/blob/master/assets/pdf/%5B1%5D%E4%B9%A6%E7%94%9F%C2%B7%E6%B5%A6%E8%AF%AD%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BC%80%E6%BA%90%E5%BC%80%E6%94%BE%E4%BD%93%E7%B3%BB_compressed.pdf))
 
 视频主要讲解了 InternLM 的发展现状和书生·浦语大模型开源开放体系。
 
